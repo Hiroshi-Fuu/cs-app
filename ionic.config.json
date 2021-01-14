@@ -1,7 +1,10 @@
 {
   "name": "cs-app",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular",
   "id": "aa20147b"
