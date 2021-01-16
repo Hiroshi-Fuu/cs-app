@@ -1,0 +1,1 @@
+ionic serve -l --lab-host=0.0.0.0 --lab-port=8200 --no-open
