@@ -13,5 +13,29 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Live Poll page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="forButton" (click)="doVote(1)">
+          <ion-img src="assets/img/for.jpeg" scroll="false"></ion-img>
+          <p>For</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="againstButton" (click)="doVote(2)">
+          <ion-img src="assets/img/against.jpeg" scroll="false"></ion-img>
+          <p>Against</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="abstainButton" (click)="doVote(3)">
+          <ion-img src="assets/img/abstain.jpeg" scroll="false"></ion-img>
+          <p>Abstain</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="margin: .5rem 1rem">Time Left: second(s)</div>
+  
+
 </ion-content>

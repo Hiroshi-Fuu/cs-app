@@ -9,4 +9,8 @@ export class TabLivePollPage {
 
   constructor() {}
 
+  doVote(option) {
+    console.log("voting", option)
+  }
+
 }
