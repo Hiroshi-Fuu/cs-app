@@ -12,8 +12,8 @@ const routes: Routes = [
         loadChildren: () => import('../tabLivePoll/tabLivePoll.module').then(m => m.TabLivePollPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'tabLivePollMultiple',
+        loadChildren: () => import('../tabLivePollMultiple/tabLivePollMultiple.module').then(m => m.TabLivePollMultiplePageModule)
       },
       {
         path: 'tab3',
