@@ -13,7 +13,10 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-grid>
+  <h2 style="margin: .5rem" *ngIf="isVoteOpen">{{ curLivePollItem.text }}</h2>
+  <h2 style="margin: .5rem" *ngIf="!isVoteOpen">There is no poll opened for voting!</h2>
+
+  <ion-grid *ngIf="isVoteOpen">
     <ion-row>
       <ion-col>
         <div class="forButton" (click)="doVote(1)">
@@ -35,7 +38,6 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <div style="margin: .5rem 1rem">Time Left: second(s)</div>
-  
+  <div style="margin: .5rem 1rem" *ngIf="isVoteOpen">Time Left: {{ votingSecondsLeft }} second(s)</div>
 
 </ion-content>
